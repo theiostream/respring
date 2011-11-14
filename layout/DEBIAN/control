@@ -1,0 +1,10 @@
+Package: am.theiostre.respring
+Name: Respring
+Depends: mobilesubstrate
+Version: 5.0
+Architecture: iphoneos-arm
+Description: Respring nicely and quickly
+Maintainer: theiostream
+Author: theiostream
+Section: Utilities
+Installed-Size: 16
