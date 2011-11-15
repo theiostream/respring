@@ -7,9 +7,7 @@
 
 %subclass RespringIcon : SBApplicationIcon
 - (void)launch {
-	if (getuid() == 0) { seteuid(501); }
 	system("/usr/bin/uicache");
-	seteuid(0);
 	
 	if ([[[UIDevice currentDevice] systemVersion] hasPrefix:@"2."])
 		notify_post("com.apple.language.changed");
@@ -18,6 +16,6 @@
 		[[UIApplication sharedApplication] languageChanged];
 	
 	else
-		system("killall -9 SpringBoard");
+		exit(0);
 }
 %end
