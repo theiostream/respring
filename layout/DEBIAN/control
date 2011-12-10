@@ -1,6 +1,6 @@
 Package: am.theiostre.respring
 Name: Respring
-Depends: mobilesubstrate
+Depends: mobilesubstrate, uikittools
 Version: 5.0
 Architecture: iphoneos-arm
 Description: Respring nicely and quickly
