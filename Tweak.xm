@@ -15,6 +15,6 @@
 		[[UIApplication sharedApplication] languageChanged];
 	
 	else
-		exit(0);
+		system("killall backboardd");
 }
 %end
